@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Card */
+
+.card{
+width:340px;
+padding:30px;
+border-radius:15px;
+text-align:center;
+color:white;
+
+/* Gradient background with two colors */
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,0.3);
+}
+
+/* Profile Image */
+
+.profile-img{
+width:120px;
+height:120px;
+border-radius:50%;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px auto;
+font-size:14px;
+color:#666;
+}
+
+/* Name */
+
+.name{
+font-size:22px;
+font-weight:600;
+margin-bottom:5px;
+color: black;
+}
+
+/* Stream */
+
+.stream{
+font-size:15px;
+font-weight:500;
+margin-bottom:15px;
+color:  black;
+}
+
+/* Bio */
+
+.bio{
+font-size:14px;
+line-height:1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="profile-img">
+Profile Image
+</div>
+
+<div class="name">
+John Silva
+</div>
+
+<div class="stream">
+Information Technology
+</div>
+
+<div class="bio">
+A passionate IT student interested in web development,
+software engineering, and modern technologies. Loves
+building creative digital solutions and learning new skills.
+</div>
+
+</div>
+
+</body>
+</html>
