@@ -3,13 +3,16 @@
 # Ask for total monthly budget
 budget = float(input("Enter your total monthly budget: "))
 
-# Ask for 3 expenses
-expense1 = float(input("Enter expense 1: "))
-expense2 = float(input("Enter expense 2: "))
-expense3 = float(input("Enter expense 3: "))
+total_expenses = 0
 
-# Calculate total expenses
-total_expenses = expense1 + expense2 + expense3
+# Loop to enter multiple expenses
+while True:
+    expense = input("Enter an expense (or type 'done' to finish): ")
+
+    if expense.lower() == "done":
+        break
+
+    total_expenses += float(expense)
 
 # Calculate remaining balance
 remaining_balance = budget - total_expenses
@@ -20,7 +23,7 @@ print("Total Budget     :", budget)
 print("Total Expenses   :", total_expenses)
 print("Remaining Balance:", remaining_balance)
 
-# Low funds warning
+# Warning for low balance
 if remaining_balance < 500:
     print("Warning: Low Funds")
 
