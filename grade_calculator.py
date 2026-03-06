@@ -7,7 +7,7 @@ while True:
         print("Program ended.")
         break
 
-    # Ask for 3 subject marks
+    # Input marks
     mark1 = float(input("Enter mark for subject 1: "))
     mark2 = float(input("Enter mark for subject 2: "))
     mark3 = float(input("Enter mark for subject 3: "))
@@ -15,10 +15,7 @@ while True:
     # Calculate average
     average = (mark1 + mark2 + mark3) / 3
 
-    print("\nStudent Name:", name)
-    print("Average Marks:", average)
-
-    # Assign grade
+    # Determine grade
     if average >= 75:
         grade = "A"
     elif average >= 60:
@@ -28,5 +25,9 @@ while True:
     else:
         grade = "Fail"
 
-    print("Grade:", grade)
-    print("------------------------")
+    # Formatted output
+    print("------------------------------")
+    print("Name   :", name)
+    print("Average:", round(average, 2))
+    print("Grade  :", grade)
+    print("------------------------------")
