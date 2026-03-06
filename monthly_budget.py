@@ -19,4 +19,9 @@ print("\n------------------------------")
 print("Total Budget     :", budget)
 print("Total Expenses   :", total_expenses)
 print("Remaining Balance:", remaining_balance)
+
+# Low funds warning
+if remaining_balance < 500:
+    print("Warning: Low Funds")
+
 print("------------------------------")
